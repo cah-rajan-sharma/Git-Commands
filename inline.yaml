@@ -1,7 +1,8 @@
+---
 platform: linux
-      image_resource:
-        type: registry-image
-        source: { repository: busybox }
-      run:
-        path: echo
-        args: ["Hello, ((hello))!"]
+image_resource:
+  type: registry-image
+  source: { repository: busybox }
+run:
+  path: echo
+  args: ["Hello, ((hello))!"]
